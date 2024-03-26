@@ -1,0 +1,35 @@
+header {
+  width: calc(100vw - 300px);
+  height: 5rem;
+  @include flex(row, space-between, center, 0);
+  padding: 1.5rem;
+  .heading {
+    letter-spacing: 1px;
+  }
+  .features {
+    @include flex(row, space-between, center, 1.8rem);
+    font-weight: 700;
+    font-size: 1.2rem;
+    > button {
+      background: none;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      font-size: 1.3rem;
+    }
+  }
+}
+
+@media screen and (width <= 930px) {
+  header {
+    width: 100%;
+    .heading{
+        margin-left: 2.6rem;
+    }
+    .features {
+      > button {
+        text-align: end !important;
+      }
+    }
+  }
+}

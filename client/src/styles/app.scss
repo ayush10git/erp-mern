@@ -1,0 +1,44 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: rgb(0, 195, 0);
+}
+
+li{
+    list-style: none;
+}
+
+$bgColor1: rgb(244,246,250);
+$bgColor2: white;
+
+@import "_mixin";
+@import "AsideBar.scss";
+@import "Header.scss";
+@import "AttendancePage";
+@import "Login.scss";
+
+// main{
+//   display: flex;
+//   .content{
+//     width: calc(100vw - 300px);
+//   }
+// }
